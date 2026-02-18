@@ -1,0 +1,17 @@
+{
+  "network": "sepolia",
+  "token": "UPDATE_AFTER_DEPLOYMENT",
+  "faucet": "UPDATE_AFTER_DEPLOYMENT",
+  "deployer": "UPDATE_AFTER_DEPLOYMENT",
+  "timestamp": "UPDATE_AFTER_DEPLOYMENT",
+  "blockNumber": 0,
+  "instructions": [
+    "1. Get Sepolia testnet ETH from a faucet",
+    "2. Configure .env with your private key and RPC URL",
+    "3. Run: npm install",
+    "4. Run: npx hardhat run scripts/deploy.js --network sepolia",
+    "5. Update this file with deployed addresses",
+    "6. Update frontend/.env with contract addresses",
+    "7. Verify contracts on Etherscan"
+  ]
+}
