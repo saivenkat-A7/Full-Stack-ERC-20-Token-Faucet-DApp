@@ -4,7 +4,7 @@ A full-stack decentralized application that distributes ERC-20 tokens with rate 
 
 ## Overview
 
-This DApp demonstrates production-ready Web3 development with:
+This DApp demonstrates production-ready Web3 development with: 
 - Smart contract design with on-chain access control
 - Wallet integration following EIP-1193 standards
 - Real-time state synchronization between blockchain and UI
