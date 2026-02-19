@@ -2,7 +2,7 @@
 
 A full-stack decentralized application that distributes ERC-20 tokens with rate limiting and lifetime claim limits enforced on-chain.
 
-## 🎯 Overview
+## Overview
 
 This DApp demonstrates production-ready Web3 development with:
 - Smart contract design with on-chain access control
@@ -11,7 +11,7 @@ This DApp demonstrates production-ready Web3 development with:
 - Gas-efficient state management
 - Complete containerization with Docker
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Smart Contracts
 
@@ -36,7 +36,7 @@ Built with React and Ethers.js:
 - User-friendly error messages
 - Responsive design
 
-## 📋 Deployed Contracts
+## Deployed Contracts
 
 ### Sepolia Testnet
 
@@ -46,13 +46,8 @@ Built with React and Ethers.js:
 **Faucet Contract:** `[UPDATE_AFTER_DEPLOYMENT]`
 - Etherscan: https://sepolia.etherscan.io/address/[FAUCET_ADDRESS]
 
-## 🚀 Quick Start
+##  Quick Start
 
-### Prerequisites
-
-- Docker and Docker Compose
-- Node.js 18+ (for local development)
-- MetaMask or compatible Web3 wallet
 
 ### Running with Docker
 
@@ -71,7 +66,7 @@ docker compose up
 
 4. Access the application at http://localhost:3000
 
-The application will be ready within 60 seconds. The health check endpoint is available at http://localhost:3000/health
+
 
 ### Local Development
 
@@ -136,7 +131,7 @@ These values were chosen to:
 - Ensure fair distribution (1,000 token lifetime limit)
 - Maintain token economics (1M total supply)
 
-## 🧪 Testing
+##  Testing
 
 ### Smart Contract Tests
 
@@ -179,7 +174,7 @@ const allowance = await window.__EVAL__.getRemainingAllowance(address);
 const addresses = await window.__EVAL__.getContractAddresses();
 ```
 
-## 🔒 Security Considerations
+## Security Considerations
 
 1. **Reentrancy Protection:** Uses OpenZeppelin's ReentrancyGuard on the requestTokens function
 2. **Access Control:** Only admin can pause; only faucet can mint tokens
@@ -188,29 +183,11 @@ const addresses = await window.__EVAL__.getContractAddresses();
 5. **Input Validation:** All inputs validated and sanitized
 6. **Gas Optimization:** Efficient storage packing and minimal storage writes
 
-## 🎨 Design Decisions
 
-### Why 100 tokens per claim?
-- Provides meaningful value to users
-- Allows 10 claims to reach lifetime limit
-- Easy to calculate and understand
 
-### Why 24-hour cooldown?
-- Industry standard for faucets
-- Prevents rapid claiming attacks
-- Allows daily engagement
 
-### Why 1,000 token lifetime limit?
-- Fair distribution among users
-- Prevents single-user accumulation
-- Encourages new user onboarding
 
-### Why 1,000,000 total supply?
-- Sufficient for 1,000 users at max limit
-- Manageable token economics
-- Clear maximum bound
-
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Smart Contracts:** Solidity 0.8.20
 - **Development Framework:** Hardhat
@@ -221,7 +198,7 @@ const addresses = await window.__EVAL__.getContractAddresses();
 - **Containerization:** Docker
 - **Network:** Sepolia Testnet
 
-## 📚 Known Limitations
+## Limitations
 
 1. **Testnet Dependency:** Requires Sepolia testnet ETH for gas
 2. **Wallet Requirement:** Users need MetaMask or compatible wallet
@@ -229,7 +206,7 @@ const addresses = await window.__EVAL__.getContractAddresses();
 4. **Rate Limiting:** 24-hour cooldown may be restrictive for testing
 5. **Lifetime Limit:** Users reaching limit need new addresses
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Support for multiple networks
 - Gasless transactions using meta-transactions
@@ -239,7 +216,7 @@ const addresses = await window.__EVAL__.getContractAddresses();
 - Dynamic claim amounts based on demand
 - Referral system
 
-## 📝 Contract Verification
+##  Contract Verification
 
 After deployment, verify contracts on Etherscan:
 
@@ -248,17 +225,3 @@ npx hardhat verify --network sepolia <TOKEN_ADDRESS> "0x000000000000000000000000
 npx hardhat verify --network sepolia <FAUCET_ADDRESS> "<TOKEN_ADDRESS>"
 ```
 
-## 🤝 Contributing
-
-This project was built as a demonstration of Web3 development capabilities. For questions or improvements, please open an issue.
-
-## 📄 License
-
-MIT License - See LICENSE file for details
-
-## 🙏 Acknowledgments
-
-- OpenZeppelin for secure contract libraries
-- Hardhat for development framework
-- Ethers.js for blockchain interactions
-- React community for frontend tools
