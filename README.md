@@ -1,7 +1,7 @@
 # ERC-20 Token Faucet DApp
 
 A full-stack decentralized application that distributes ERC-20 tokens with rate limiting and lifetime claim limits enforced on-chain.
-
+ 
 ## Overview 
 
 This DApp demonstrates production-ready Web3 development with: 
