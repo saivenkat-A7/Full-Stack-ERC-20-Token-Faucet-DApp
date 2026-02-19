@@ -3,7 +3,7 @@
 A full-stack decentralized application that distributes ERC-20 tokens with rate limiting and lifetime claim limits enforced on-chain.
  
 ## Overview   
-
+ 
 This DApp demonstrates production-ready Web3 development with: 
 - Smart contract design with on-chain access control
 - Wallet integration following EIP-1193 standards
